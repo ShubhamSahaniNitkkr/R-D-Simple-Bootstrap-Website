@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="In this lab, we make a responsive content slider jQuery plugin" />
+<title>NITKKR (Research & Development)</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="shortcut icon" href="images/nitkkrlogo.ico"/>
+
+
+
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.cslide.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#cslide-slides").cslide();
+});
+</script>
+
+<style media="screen">
+
+  #top-bar a:hover{
+    position: relative;
+    bottom:1px;
+    border: 2px solid black;
+  }
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; }
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+position: relative;
+width: 500%;
+margin: 0;
+left: 0;
+text-align: left;
+font-size: 0;
+animation: 30s slidy infinite;
+}
+  body{
+    overflow-x: hidden;
+    /*background-image: url('images/back.jpg');*/
+  }
+img{
+  border:5px solid #0b518e;
+  padding: 8px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+a.list-group-item, button.list-group-item {
+    color: #f9f9f9;
+    background-color: #4681b4;
+
+}
+
+figure img{
+  width:400px;
+  height:650px;
+  border: none;
+}
+
+div#slider{
+  position: relative;
+  top: -66px;
+  margin: -10px;
+}
+
+#main{
+  /*background-image: url('images/back.jpg');*/
+  opacity: 0.5px;
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+<div id="wrapper">
+
+
+
+<header>
+    <!-- <div id="title" class="container"> -->
+
+        <!-- </div> -->
+
+        <div id="slider">
+        <figure>
+          <img src="images/ch1.jpg" alt>
+        <img src="images/cs1.jpg" alt>
+        <img src="images/physics2.jpg" alt>
+        <img src="images/ch2.jpg" alt>
+        <img src="images/cs2.jpg" alt>
+        </figure>
+        </div>
+
+    <h1 style="text-align:center;margin-right: -25px;color: white;margin-top: -48px;font-size: 40px;">
+      Research and Consultancy
+    </h1>
+    <br>
+    <h2 style="color:black;margin-right:-25px;font-size:18px;margin-top: -18px;"> <center>National Institute of Technology Kurukshetra</center></h2>
+    <br>
+</header><!-- /header -->
+</div>
+
+<div id="top-bar">
+    <div class="container clearfix">
+      <!-- <img src="images/Nitkkr.png" alt="NIT Kurushetra" style="border:none;height: 42px;width: 52px;margin-top: 0px;"> -->
+
+        <span class="back-to-tutorial"><a href="https://www.nitkkr.ac.in" target="_blank">Home</a>
+          <a href='links/Research_at_NITKKR.html' target="_blank"> Research at NITKKR </a>
+          <a href='links/Ongoing_Sponsored_Research_Projects.html' target="_blank"> Ongoing Sponsored Research Projects</a>
+          <a href='links/Institute_Procedure.html' target="_blank"> Institute Procedure</a>
+          <a href='links/Infrastructure.html' target="_blank"> Infrastructure</a>
+          <a href='links/Student_Projects.html' target="_blank"> Student Projects</a>
+          <a href='links/Contact.html' target="_blank"> Contact</a>
+        </span>
+    </div>
+</div><!-- /#top-bar -->
+
+<div id="main">
+    <div class="container">
+
+        <section id="cslide-slides" class="cslide-slides-master clearfix" style="box-shadow: -14px -13px 768px #292828;">
+            <div class="cslide-prev-next clearfix">
+
+                <!-- <div class="cslide-slide-big" style="border: 3px solid #0e0e0e;">
+                    <p></p>
+                </div> -->
+
+                <div class="cslide-slide-middle">
+                  <div class="cslide-slide-middle" style="border: 4px solid #0e0e0e;">
+                      <center>  <h2 style="color:black;"> Overview </h2></center>
+                      <p>NIT Kurukshetra is committed to fundamental and applied research in frontier areas of engineering, technology and science streams. Expanding list of sponsored research projects reflects its noteworthy position in cutting edge research.Teaching and learning processes and research and development activities are supported by central facilities. The central library with state-of-the-art facilities houses a huge collection of 1,90,000 documents. The library subscribes to over 4500 journals and online resources. The centre of computing and networking provides computing and networking infrastructure for information access to students, faculty and staff through a campus wide local area network with OFC backbone. Focused attempts are made for the growth of the students by providing them with an array of extra- and co-curricular activities. State-of-the-art sports and games facilities including swimming pool, and technical and cultural clubs contribute to wholesome health and holistic development and of the students.
+                        During its exemplary journey of over five decades, NIT Kurukshetra has been successful in making remarkable strides in teaching, learning, research and outreach activities.</p>
+                  </div>
+                  <div class="cslide-slide-middle">
+                      <center><h2 style="color:black;"> Mission & Vision </h2></center>
+                        <p>To be a role model in technical education and research, responsive to global challenges.
+                          To impart quality technical education that develops innovative professionals and enterpreneurs and to undertake research that generates cutting edge technologies and futuristic knowledge, focusing on the socio-economic needs.</p>
+                  </div>
+                </div>
+            </div>
+                <div class="cslide-slide">
+                    <div class="border" style="position:sticky;top:0px;"><center><h2>Announcements</h2></center></div>
+                    <br>
+                      <div class="list-group">
+
+                        <a href="doc/Application Form.pdf" class="list-group-item" download>Application form for seeking financial support for organizing Conference/Symposium/Seminar</a>
+                        <a href="doc/Application Form.pdf" class="list-group-item" download>Financial Assistance to Students</a>
+
+
+
+                      </div>
+
+
+
+                </div>
+                <div class="cslide-slide">
+                  <div class="border" style="position:sticky;top:0px;"><center><h2>Achievements		</h2></center></div>
+                  <br>
+                    <div class="list-group">
+
+                      <a href="#" class="list-group-item">India Innovation Challenge and Design Contest  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Details</button></a>
+
+                    </div>
+
+                </div>
+                <div class="cslide-slide">
+                  <div class="border" style="position:sticky;top:0px;"><center><h2>Important Links</h2></center></div>
+                  <br>
+                    <div class="list-group">
+
+                      <a href="http://nrbdrdo.res.in/" class="list-group-item">Naval Research Board (DRDO)</a>
+                      <a href="http://drdo.gov.in/drdo/boards/ardb/rules&grants_intro.htm" class="list-group-item">Aeronautics Research and Development Board (AR&DB) (DRDO)</a>
+                      <a href="http://drdo.gov.in/drdo/English/index.jsp?pg=armreb.jsp" class="list-group-item">Armaments Research Board (DRDO)</a>
+
+                      <a href=" http://drdo.gov.in/drdo/boards/lsrb/fplsrb.htm" class="list-group-item">Life Sciences Research Board (DRDO)</a>
+                      <a href=" http://barc.gov.in/brns/brns_research.html" class="list-group-item">Board of Research in Nuclear Sciences (BRNS) (DAE)</a>
+                      <a href="http://www.nbhm.dae.gov.in/forms/research.doc" class="list-group-item">National Board for Higher Mathematics (NBHM) (DAE)</a>
+
+
+                      <a href="http://www.isro.org/scripts/srrespond.aspx" class="list-group-item">Indian Space Research Organisation (ISRO)</a>
+                      <a href=" http://www.icmr.nic.in/Grants/Grants.html" class="list-group-item">Indian Council of Medical Research (ICMR)</a>
+                      <a href="http://deity.gov.in/sites/upload_files/dit/files/Terms&conditions.pdf" class="list-group-item">Department of Electronics and Information Technology</a>
+                      <a href="doc/Prospective Sponsoring agencies for R&D Projects.pdf" class="list-group-item" download><button type="button" class="btn btn-info btn-sm">More</button></a>
+
+
+                    </div>
+    </div>
+
+            <!-- </div> -->
+        </section><!-- /sliding content section -->
+    </div>
+
+</div><!-- #main -->
+
+</div><!-- /#wrapper -->
+<!-- <br><br> -->
+
+<footer style="width: 100%;
+    height: 12px;
+    background: #4681b4;">
+
+    <!-- <img src="images/Nitkkr.png" alt="NIT Kurushetra" style="
+    width: 74px;
+    height: 70px;
+    margin: 20px 174px;
+    border: 5px #39678f solid;
+    padding: 3px;
+    float:left;"> -->
+  <h4 style="  margin: 32px 540px; position: absolute; color:white;">National Institute of Technology Kurukshetra</h4>
+  <h5 style="margin: 60px 600px;position: absolute; color:white;">DEAN, RESEARCH & CONSULTANCY </h5>
+  <h5 style="margin: 90px 565px;position: absolute; color:white;">KURUKSHETRA-136119 (Haryana), 01744-233221 </h5>
+  <h5 style="margin: 120px 630px 10px;position: absolute; color:white;">email : brahmjit@nitkkr.ac.in</h5>
+  <h5 style="margin: 142px 635px 10px;position: absolute; color:white;">email : deanrc@nitkkr.ac.in</h5>
+
+
+  <h1 style="margin: 30px 1040px;position: relative;bottom: -100px;color:white;font-size: 12px;width: 408px;padding-top:70px;letter-spacing:1px;">Developed By : <a href="https://www.linkedin.com/in/shubham-sunny-09b013129/" target="_blank" style="color:#e89e9e;">Shubham Sunny</a>, Sudhir Meena, Aditya Paudyal</h1>
+  </footer>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="
+    background: steelblue;
+    color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <strong><center><h4 class="modal-title"><strong>India Innovation Challenge and Design Contest</strong></h4></strong></center>
+      </div>
+      <div class="modal-body">
+        <p>A three-member student team from NIT Kurukshetra, participated in “India Innovation Challenge and Design Contest” organized Texas Instruments, anchored by IIM Bangalore and funded by Department of Science and Technology (DST), and supported by My-Gov. and make in India. The team included Mukesh Prasad Agrawal from Electrical Engineering, NishantBundela and Naveen Rathi from Mechanical Engineering, NIT Kurukshetra. These students developed “Smart Stick” for the blinds with the objective of helping them travel independently. This device houses various sensors and a microcontroller which notifies the user about the obstacles in the path by vibration. 11,500 team from 628 Engineering colleges of India took part in this contest. Round 1 was Abstract submission round for an Innovative business proposal. After round 1, 428 teams were shortlisted for quarterfinal round. On the basis of presentation and video of technical demonstration of the prototype developed, 54 teams were selected for semifinal round. In semifinal round, shortlisted teams presented their idea in front of a panel of judges from IIM Bangalore. 30 teams qualified for the final round and were granted a project development fund of Rs. 5 Lakh. Each team was allotted mentors from IIM Bangalore and Texas Instruments for business and technical guidance respectively. In the final round, NIT Kurukshetra team bagged 16th position in this contest.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
