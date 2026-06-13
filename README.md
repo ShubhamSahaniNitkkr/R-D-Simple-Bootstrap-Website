@@ -1,8 +1,8 @@
 # Bootstrap Portfolio Website
 
 > Company/portfolio site with Bootstrap grid, slider, and responsive navigation.
+  <img width="2240" height="1162" alt="image" src="https://github.com/user-attachments/assets/b3fe3747-33ee-4c36-948b-6c3668a5c869" />
 
-![Screenshot](./screenshot.png)
 > Add `screenshot.png` in project root for preview.
 
 ## Purpose
