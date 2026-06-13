@@ -75,3 +75,47 @@ div#slider figure {
   font-size: 0;
   animation: 30s slidy infinite;
 }
+
+@media (max-width: 768px) {
+  figure img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  div#slider {
+    top: 0;
+    margin: 0;
+  }
+
+  #top-bar .back-to-tutorial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  #top-bar a {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  footer h4, footer h5, footer h1 {
+    position: static !important;
+    margin: 8px auto !important;
+    text-align: center;
+    width: auto !important;
+    padding: 0 10px;
+  }
+
+  footer {
+    height: auto !important;
+    padding: 20px 10px 40px;
+  }
+
+  .cslide-slide {
+    height: auto;
+    min-height: 320px;
+  }
+}
