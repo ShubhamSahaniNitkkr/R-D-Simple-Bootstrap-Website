@@ -30,7 +30,7 @@ npm install && npm run dev
 
 ## Live Demo
 
-[https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/R-D-Simple-Bootstrap-Website/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/R-D-Simple-Bootstrap-Website/)
+[https://shubhamsahaniNitkkr.github.io/R-D-Simple-Bootstrap-Website/](https://shubhamsahaniNitkkr.github.io/R-D-Simple-Bootstrap-Website/)
 
 
 ## Performance & UI
